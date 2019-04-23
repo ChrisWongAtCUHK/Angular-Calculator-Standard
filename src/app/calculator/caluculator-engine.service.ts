@@ -41,6 +41,28 @@ export class CalculatorEngineService {
         this.currentValue = '';
     }
 
+    multiply() {
+        if (this.currentValue === '') {
+            return;
+        }
+
+        this.register.push(this.currentValue);
+        this.register.push('*');
+
+        this.currentValue = '';
+    }
+
+    divide() {
+        if (this.currentValue === '') {
+            return;
+        }
+
+        this.register.push(this.currentValue);
+        this.register.push('/');
+        
+        this.currentValue = '';
+    }
+
     getExpression() {
         return this.register.join(' ');
     }

@@ -41,6 +41,19 @@ export class CalculatorComponent implements OnInit {
     this.value = this.calculator.currentValue;
   }
 
+  onMultiply() {
+    this.calculator.multiply();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+  }
+
+  onDivide() {
+    this.calculator.divide();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+    console.log(this.expression);
+  }
+
   onEquals() {
     this.calculator.equals();
   }

@@ -7,8 +7,10 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class KeypadComponent implements OnInit {
   @Output() onDigit = new EventEmitter<number>();
-  @Output() onAdd = new EventEmitter<number>();
-  @Output() onSubtract = new EventEmitter<number>();
+  @Output() onAdd = new EventEmitter<any>();
+  @Output() onSubtract = new EventEmitter<any>();
+  @Output() onMultiply = new EventEmitter<any>();
+  @Output() onDivide = new EventEmitter<any>();
 
   constructor() { }
 
