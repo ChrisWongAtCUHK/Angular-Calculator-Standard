@@ -1,0 +1,32 @@
+<div class="keypad">
+    <div class="keypad-row">
+        <button class="btn keypad-secondary-btn" value="clear-all" (click)="onClearAll()">CE</button>
+        <button class="btn keypad-secondary-btn" value="clear" (click)="onClear()">C</button>
+        <button class="btn keypad-secondary-btn" value="backspace" (click)="onDelete()"><i class="fa fa-caret-left fa-lg"></i></button>
+        <button class="btn keypad-secondary-btn" value="/" (click)="onDivide()">&divide;</button>
+    </div>
+    <div class="keypad-row">
+        <button class="btn keypad-primary-btn" value="7" (click)="handleOnDigit($event)">7</button>
+        <button class="btn keypad-primary-btn" value="8" (click)="handleOnDigit($event)">8</button>
+        <button class="btn keypad-primary-btn" value="9" (click)="handleOnDigit($event)">9</button>
+        <button class="btn keypad-secondary-btn" value="*" (click)="onMultiply()">&times;</button>
+    </div>
+    <div class="keypad-row">
+        <button class="btn keypad-primary-btn" value="4" (click)="handleOnDigit($event)">4</button>
+        <button class="btn keypad-primary-btn" value="5" (click)="handleOnDigit($event)">5</button>
+        <button class="btn keypad-primary-btn" value="6" (click)="handleOnDigit($event)">6</button>
+        <button class="btn keypad-secondary-btn" value="-" (click)="onSubtract()">&minus;</button>
+    </div>
+    <div class="keypad-row">
+        <button class="btn keypad-primary-btn" value="1" (click)="handleOnDigit($event)">1</button>
+        <button class="btn keypad-primary-btn" value="2" (click)="handleOnDigit($event)">2</button>
+        <button class="btn keypad-primary-btn" value="3" (click)="handleOnDigit($event)">3</button>
+        <button class="btn keypad-secondary-btn" value="+" (click)="onAdd()">&#43;</button>
+    </div>
+    <div class="keypad-row">
+        <button class="btn keypad-secondary-btn" value="+-" (click)="onToggleSign()">&plusmn;</button>
+        <button class="btn keypad-primary-btn" value="0" (click)="handleOnDigit($event)">0</button>
+        <button class="btn keypad-secondary-btn" value="." (click)="onDecimalPoint()">.</button>
+        <button class="btn keypad-secondary-btn" style="color: '#4CAF50'" value="=" (click)="onEquals()">=</button>
+    </div>
+</div>
