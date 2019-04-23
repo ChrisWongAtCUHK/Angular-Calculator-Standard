@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorEngineService } from '../caluculator-engine.service';
 
 @Component({
   selector: 'app-calculator',
@@ -9,10 +10,13 @@ export class CalculatorComponent implements OnInit {
   expression: string;
   value: string;
 
-  constructor() { }
+  constructor(private calculator: CalculatorEngineService) { }
 
   ngOnInit() {
-    this.value = '0';
+    this.value = '0'; 
   }
 
+  onEquals() {
+    this.calculator.equals();
+  }
 }

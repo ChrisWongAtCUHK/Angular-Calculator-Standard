@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CalculatorComponent } from './calculator/calculator/calculator.component';
 import { DisplayComponent } from './calculator/display/display.component';
+import { CalculatorEngineService } from './calculator/caluculator-engine.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { DisplayComponent } from './calculator/display/display.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CalculatorEngineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
