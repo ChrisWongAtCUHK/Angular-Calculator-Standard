@@ -1,0 +1,15 @@
+<div class="history">
+    <div class="history-item" *ngFor="let expression of history">
+        <button class="btn btn-block btn-light" (click)="onHistorySelected.emit()">
+            <div class="p-2 text-right">
+                <div>{{expression.expression}}&nbsp;=</div>
+                <div class="font-weight-bold">{{expression.result}}</div>
+            </div>
+        </button>
+        <div class="history-trash" (click)="onClearHistory.emit()">
+            <div class="text-center text-danger">
+                <i class="fa fa-trash-o fa-2x my-2"></i>
+            </div>                            
+        </div>
+    </div>
+</div>

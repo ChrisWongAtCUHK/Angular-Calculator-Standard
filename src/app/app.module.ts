@@ -9,6 +9,7 @@ import { DisplayComponent } from './calculator/display/display.component';
 import { CalculatorEngineService } from './calculator/caluculator-engine.service';
 import { ControlPanelComponent } from './calculator/control-panel/control-panel.component';
 import { KeypadComponent } from './calculator/keypad/keypad.component';
+import { HistoryComponent } from './calculator/history/history.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { KeypadComponent } from './calculator/keypad/keypad.component';
     CalculatorComponent,
     DisplayComponent,
     ControlPanelComponent,
-    KeypadComponent
+    KeypadComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

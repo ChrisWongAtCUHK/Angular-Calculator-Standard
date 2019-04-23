@@ -91,5 +91,12 @@ export class CalculatorComponent implements OnInit {
     this.value = this.calculator.currentValue;
   }
 
+  onClearHistory() {
+
+  }
+
+  onHistorySelected() {
+    
+  }
   
 }

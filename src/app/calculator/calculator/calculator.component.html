@@ -15,5 +15,9 @@
       (onClearAll)="onClearAll($event)"
       (onDelete)="onDelete($event)"
       (onToggleSign)="onToggleSign($event)"></app-keypad>
+    <app-history *ngIf="showHistory" 
+      [history]="history"
+      (onClearHistory)="onClearHistory($event)"
+      (onHistorySelected)="onHistorySelected($event)"></app-history>
   </div>
 </div>
