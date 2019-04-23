@@ -19,6 +19,21 @@ export class CalculatorEngineService {
         this.currentValue += digit;
     }
 
+    add() {
+        if (this.currentValue === '') {
+            return;
+        }
+
+        this.register.push(this.currentValue);
+        this.register.push('+');
+
+        this.currentValue = '';
+    }
+
+    getExpression() {
+        return this.register.join(' ');
+    }
+
     equals() {
         console.log(math.eval("5 + 9"));
     }

@@ -3,6 +3,8 @@
     <app-display [expression]="expression" [value]="value"></app-display>
     <app-control-panel [anyHistory]="history.length > 0"
         (onToggleHistory)="onToggleHistory($event)"></app-control-panel>
-    <app-keypad (onDigit)="onDigit($event)" ></app-keypad>
+    <app-keypad 
+      (onDigit)="onDigit($event)" 
+      (onAdd)="onAdd($event)"></app-keypad>
   </div>
 </div>

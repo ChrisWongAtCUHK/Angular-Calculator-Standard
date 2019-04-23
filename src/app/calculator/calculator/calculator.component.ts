@@ -26,7 +26,12 @@ export class CalculatorComponent implements OnInit {
 
   onDigit(digit: number) {
     this.calculator.inputDigit(digit);
+    this.value = this.calculator.currentValue;
+  }
 
+  onAdd() {
+    this.calculator.add();
+    this.expression = this.calculator.getExpression();
     this.value = this.calculator.currentValue;
   }
 

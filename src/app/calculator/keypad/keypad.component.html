@@ -21,7 +21,7 @@
         <button class="btn keypad-primary-btn" value="1" (click)="handleOnDigit($event)">1</button>
         <button class="btn keypad-primary-btn" value="2" (click)="handleOnDigit($event)">2</button>
         <button class="btn keypad-primary-btn" value="3" (click)="handleOnDigit($event)">3</button>
-        <button class="btn keypad-secondary-btn" value="+" (click)="onAdd()">&#43;</button>
+        <button class="btn keypad-secondary-btn" value="+" (click)="onAdd.emit()">&#43;</button>
     </div>
     <div class="keypad-row">
         <button class="btn keypad-secondary-btn" value="+-" (click)="onToggleSign()">&plusmn;</button>

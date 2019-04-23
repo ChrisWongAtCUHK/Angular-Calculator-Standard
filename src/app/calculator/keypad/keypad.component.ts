@@ -7,6 +7,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class KeypadComponent implements OnInit {
   @Output() onDigit = new EventEmitter<number>();
+  @Output() onAdd = new EventEmitter<number>();
 
   constructor() { }
 
@@ -16,4 +17,5 @@ export class KeypadComponent implements OnInit {
   handleOnDigit(event: any) {
     this.onDigit.emit(parseInt(event.target.value));
   }
+  
 }
