@@ -8,7 +8,13 @@ export class CalculatorEngineService {
     history = [];
     result = '';
 
-    constructor() {}
+    constructor() {
+        math.config({
+            number: 'BigNumber', // Default type of number:
+            // 'number' (default), 'BigNumber', or 'Fraction'
+            precision: 64        // Number of significant digits for BigNumbers
+        })
+    }
 
     inputDigit(digit: number) {
         if (this.result !== '') {
