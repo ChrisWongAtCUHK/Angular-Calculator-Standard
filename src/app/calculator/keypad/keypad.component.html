@@ -2,7 +2,7 @@
     <div class="keypad-row">
         <button class="btn keypad-secondary-btn" value="clear-all" (click)="onClearAll.emit()">CE</button>
         <button class="btn keypad-secondary-btn" value="clear" (click)="onClear.emit()">C</button>
-        <button class="btn keypad-secondary-btn" value="backspace" (click)="onDelete()"><i class="fa fa-caret-left fa-lg"></i></button>
+        <button class="btn keypad-secondary-btn" value="backspace" (click)="onDelete.emit()"><i class="fa fa-caret-left fa-lg"></i></button>
         <button class="btn keypad-secondary-btn" value="/" (click)="onDivide.emit()">&divide;</button>
     </div>
     <div class="keypad-row">

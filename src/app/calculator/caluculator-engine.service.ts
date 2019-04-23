@@ -110,4 +110,12 @@ export class CalculatorEngineService {
         this.clear();
         this.history = [];
     }
+
+    delete() {
+        if (this.currentValue === '') {
+            return;
+        }
+
+        this.currentValue = this.currentValue.substring(0, this.currentValue.length - 1);
+    }
 }

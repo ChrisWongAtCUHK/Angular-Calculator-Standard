@@ -15,6 +15,7 @@ export class KeypadComponent implements OnInit {
   @Output() onEquals = new EventEmitter<any>();
   @Output() onClear = new EventEmitter<any>();
   @Output() onClearAll = new EventEmitter<any>();
+  @Output() onDelete = new EventEmitter<any>();
   
   constructor() { }
 

@@ -78,5 +78,11 @@ export class CalculatorComponent implements OnInit {
     this.history = this.calculator.history;
   }
 
+  onDelete() {
+    this.calculator.delete();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+  }
+
   
 }
