@@ -2,7 +2,7 @@
   <div class="calculator col-md-5 mx-auto">
     <app-display [expression]="expression" [value]="value"></app-display>
     <app-control-panel [anyHistory]="history.length > 0"
-        (onToggleHistory)="onToggleHistory($event)"></app-control-panel>
+        (onToggleHistory)="onToggleHistory()"></app-control-panel>
     <app-keypad *ngIf="!showHistory"
       (onDigit)="onDigit($event)" 
       (onAdd)="onAdd($event)"
