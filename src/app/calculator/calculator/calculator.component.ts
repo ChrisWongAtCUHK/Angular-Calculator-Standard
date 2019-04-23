@@ -64,4 +64,19 @@ export class CalculatorComponent implements OnInit {
     this.expression = this.calculator.getExpression();
     this.value = this.calculator.currentValue;
   }
+
+  onClear() {
+    this.calculator.clear();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+  }
+
+  onClearAll() {
+    this.calculator.clearAll();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+    this.history = this.calculator.history;
+  }
+
+  
 }

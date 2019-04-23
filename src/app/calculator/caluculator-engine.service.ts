@@ -99,4 +99,15 @@ export class CalculatorEngineService {
         this.history.splice(0, 0, { expression, result });
         this.register = [];
     }
+
+    clear() {
+        this.currentValue = '';
+        this.register = [];
+        this.result = '';
+    }
+
+    clearAll() {
+        this.clear();
+        this.history = [];
+    }
 }
