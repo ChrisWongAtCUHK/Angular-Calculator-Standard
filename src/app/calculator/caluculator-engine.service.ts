@@ -85,6 +85,18 @@ export class CalculatorEngineService {
     }
 
     equals() {
-        console.log(math.eval("5 + 9"));
+        if (this.currentValue === '') {
+            return;
+        }
+
+        this.register.push(this.currentValue);
+
+        const expression = this.register.join(' ');
+
+        this.result = math.eval(expression);
+        const result = this.result;
+        this.currentValue = this.result.toString();
+        this.history.splice(0, 0, { expression, result });
+        this.register = [];
     }
 }

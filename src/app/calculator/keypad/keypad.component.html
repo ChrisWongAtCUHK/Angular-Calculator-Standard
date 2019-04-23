@@ -27,6 +27,6 @@
         <button class="btn keypad-secondary-btn" value="+-" (click)="onToggleSign()">&plusmn;</button>
         <button class="btn keypad-primary-btn" value="0" (click)="handleOnDigit($event)">0</button>
         <button class="btn keypad-secondary-btn" value="." (click)="onDecimalPoint.emit()">.</button>
-        <button class="btn keypad-secondary-btn" style="color: '#4CAF50'" value="=" (click)="onEquals()">=</button>
+        <button class="btn keypad-secondary-btn" style="color: #4CAF50" value="=" (click)="onEquals.emit()">=</button>
     </div>
 </div>

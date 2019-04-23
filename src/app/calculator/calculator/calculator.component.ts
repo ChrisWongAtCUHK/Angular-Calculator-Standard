@@ -61,5 +61,7 @@ export class CalculatorComponent implements OnInit {
 
   onEquals() {
     this.calculator.equals();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
   }
 }

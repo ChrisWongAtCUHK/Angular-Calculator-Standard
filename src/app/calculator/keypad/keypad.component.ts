@@ -12,6 +12,7 @@ export class KeypadComponent implements OnInit {
   @Output() onMultiply = new EventEmitter<any>();
   @Output() onDivide = new EventEmitter<any>();
   @Output() onDecimalPoint = new EventEmitter<any>();
+  @Output() onEquals = new EventEmitter<any>();
   
   constructor() { }
 
