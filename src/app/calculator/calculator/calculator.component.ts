@@ -15,7 +15,7 @@ export class CalculatorComponent implements OnInit {
   constructor(private calculator: CalculatorEngineService) { }
 
   ngOnInit() {
-    this.value = '0'; 
+    this.value = ''; 
     this.history = [];
     this.showHistory = false;
   }
@@ -80,6 +80,12 @@ export class CalculatorComponent implements OnInit {
 
   onDelete() {
     this.calculator.delete();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+  }
+
+  onToggleSign() {
+    this.calculator.toggleSign();
     this.expression = this.calculator.getExpression();
     this.value = this.calculator.currentValue;
   }

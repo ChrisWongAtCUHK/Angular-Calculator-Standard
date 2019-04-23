@@ -118,4 +118,12 @@ export class CalculatorEngineService {
 
         this.currentValue = this.currentValue.substring(0, this.currentValue.length - 1);
     }
+
+    toggleSign() {
+        if (this.currentValue === '') {
+            return;
+        }
+        
+        this.currentValue = (parseFloat(this.currentValue) * (-1)).toString();
+    }
 }
