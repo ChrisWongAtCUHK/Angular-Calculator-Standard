@@ -35,6 +35,12 @@ export class CalculatorComponent implements OnInit {
     this.value = this.calculator.currentValue;
   }
 
+  onSubtract() {
+    this.calculator.subtract();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
+  }
+
   onEquals() {
     this.calculator.equals();
   }

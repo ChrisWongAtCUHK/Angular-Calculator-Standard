@@ -15,7 +15,7 @@
         <button class="btn keypad-primary-btn" value="4" (click)="handleOnDigit($event)">4</button>
         <button class="btn keypad-primary-btn" value="5" (click)="handleOnDigit($event)">5</button>
         <button class="btn keypad-primary-btn" value="6" (click)="handleOnDigit($event)">6</button>
-        <button class="btn keypad-secondary-btn" value="-" (click)="onSubtract()">&minus;</button>
+        <button class="btn keypad-secondary-btn" value="-" (click)="onSubtract.emit()">&minus;</button>
     </div>
     <div class="keypad-row">
         <button class="btn keypad-primary-btn" value="1" (click)="handleOnDigit($event)">1</button>
