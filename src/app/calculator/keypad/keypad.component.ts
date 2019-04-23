@@ -11,7 +11,8 @@ export class KeypadComponent implements OnInit {
   @Output() onSubtract = new EventEmitter<any>();
   @Output() onMultiply = new EventEmitter<any>();
   @Output() onDivide = new EventEmitter<any>();
-
+  @Output() onDecimalPoint = new EventEmitter<any>();
+  
   constructor() { }
 
   ngOnInit() {

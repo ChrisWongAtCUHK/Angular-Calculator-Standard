@@ -51,7 +51,12 @@ export class CalculatorComponent implements OnInit {
     this.calculator.divide();
     this.expression = this.calculator.getExpression();
     this.value = this.calculator.currentValue;
-    console.log(this.expression);
+  }
+
+  onDecimalPoint() {
+    this.calculator.inputDecimal();
+    this.expression = this.calculator.getExpression();
+    this.value = this.calculator.currentValue;
   }
 
   onEquals() {

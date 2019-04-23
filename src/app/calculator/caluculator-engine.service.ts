@@ -63,6 +63,23 @@ export class CalculatorEngineService {
         this.currentValue = '';
     }
 
+    inputDecimal() {
+        if (this.result !== '') {
+            this.result = '';
+            this.currentValue = '';         
+        }
+
+        if (this.currentValue.indexOf('.') >= 0) {
+            return;
+        }
+
+        if (this.currentValue === '') {
+            this.currentValue += '0.';
+        } else {
+            this.currentValue += '.';
+        }
+    }
+
     getExpression() {
         return this.register.join(' ');
     }
