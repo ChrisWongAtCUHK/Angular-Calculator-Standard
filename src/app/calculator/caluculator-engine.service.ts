@@ -123,7 +123,11 @@ export class CalculatorEngineService {
         if (this.currentValue === '') {
             return;
         }
-        
+
         this.currentValue = (parseFloat(this.currentValue) * (-1)).toString();
+    }
+
+    loadHistory(index: number) {
+        this.currentValue = this.history[index].result.toString();
     }
 }

@@ -92,11 +92,14 @@ export class CalculatorComponent implements OnInit {
   }
 
   onClearHistory() {
-
+    this.calculator.history = [];
+    this.history = [];
+    this.showHistory = false;
   }
 
-  onHistorySelected() {
-    
-  }
-  
+  onHistorySelected(index: number) {
+    this.calculator.loadHistory(index);
+    this.expression = this.history[index].expression;
+    this.value = this.calculator.currentValue;
+  } 
 }

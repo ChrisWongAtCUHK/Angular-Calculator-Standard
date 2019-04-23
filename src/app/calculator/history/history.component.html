@@ -1,6 +1,6 @@
 <div class="history">
-    <div class="history-item" *ngFor="let expression of history">
-        <button class="btn btn-block btn-light" (click)="onHistorySelected.emit()">
+    <div class="history-item" *ngFor="let expression of history; let i = index">
+        <button class="btn btn-block btn-light" (click)="onHistorySelected.emit(i)">
             <div class="p-2 text-right">
                 <div>{{expression.expression}}&nbsp;=</div>
                 <div class="font-weight-bold">{{expression.result}}</div>
