@@ -21,7 +21,7 @@ export class CalculatorComponent implements OnInit {
   }
 
   onToggleHistory() {
-    console.log("handling onToggleHistory");
+    this.showHistory = !this.showHistory;
   }
 
   onDigit(digit: number) {
