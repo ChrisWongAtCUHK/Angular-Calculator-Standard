@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { CalculatorComponent } from './calculator/calculator/calculator.component';
 import { DisplayComponent } from './calculator/display/display.component';
 import { CalculatorEngineService } from './calculator/caluculator-engine.service';
+import { ControlPanelComponent } from './calculator/control-panel/control-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CalculatorComponent,
-    DisplayComponent
+    DisplayComponent,
+    ControlPanelComponent
   ],
   imports: [
     BrowserModule,

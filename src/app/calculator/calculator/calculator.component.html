@@ -1,6 +1,7 @@
 <div class="row">
   <div class="calculator col-md-5 mx-auto">
     <app-display [expression]="expression" [value]="value"></app-display>
+    <app-control-panel [anyHistory]="history.length > 0"
+        (onToggleHistory)="onToggleHistory($event)"></app-control-panel>
   </div>
 </div>
-<input type="button" value="eval" (click)="onEquals()" />
