@@ -12,7 +12,7 @@ export class CalculatorEngineService {
         math.config({
             number: 'BigNumber', // Default type of number:
             // 'number' (default), 'BigNumber', or 'Fraction'
-            precision: 64        // Number of significant digits for BigNumbers
+            precision: 10        // Number of significant digits for BigNumbers
         })
     }
 
